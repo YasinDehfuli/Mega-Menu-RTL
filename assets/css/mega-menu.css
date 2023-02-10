@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
 * {
   font-family: Vazirmatn, "Vazirmatn FD", serif;
   box-sizing: border-box;
@@ -38,7 +34,7 @@ Screen style's
 }
 .menu-mobile:after {
   content: "\f394";
-  font-family: "Ionicons";
+  font-family: Vazirmatn;
   font-size: 2.5rem;
   padding: 0;
   float: right;
@@ -49,7 +45,7 @@ Screen style's
 
 .menu-dropdown-icon:before {
   content: "\f489";
-  font-family: "Ionicons";
+  font-family: Vazirmatn;
   display: none;
   cursor: pointer;
   float: right;
@@ -58,6 +54,19 @@ Screen style's
   color: #333;
 }
 
+.menu .nav-img img {
+  max-width: 100%;
+  height: 400px;
+  width: 446px;
+}
+.menu .nav-img .img-title {
+  background-color: white;
+  color: black;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
 .menu > ul {
   margin: 0 auto;
   width: 100%;
@@ -84,8 +93,12 @@ Screen style's
 }
 .menu > ul > li a {
   text-decoration: none;
-  padding: 1.5em 3em;
+  padding: 1em 3em;
   display: block;
+  transition: 333ms;
+}
+.menu > ul > li a:hover {
+  color: black;
 }
 .menu > ul > li:hover {
   background: #f0f0f0;
@@ -213,6 +226,17 @@ Mobile style's
   }
   .menu .show-on-mobile {
     display: block;
+  }
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile Navbar None Display Image
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 959px) {
+  .menu .nav-img img {
+    display: none;
+  }
+  .menu .nav-img .img-title {
+    display: none;
   }
 }
 
