@@ -78,6 +78,9 @@ Screen style's
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.menu > ul .left-flo {
+  float: left;
+}
 .menu > ul:before, .menu > ul:after {
   content: "";
   display: table;
